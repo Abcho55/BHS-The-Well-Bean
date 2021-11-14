@@ -1,0 +1,119 @@
+body {
+  background-color: #d4eff7;
+  background-image: linear-gradient(#47c2b8, #c4e3fc);
+  min-height: 100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  text-align: center;
+}
+
+.week-button {
+  text-align: center;
+}
+
+.days{
+  margin: auto;
+  display: flex;
+  width: 63%;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-left: 5vh;
+}
+
+.week-blocks { 
+  margin: auto;
+  display: flex;
+  width: 70%;
+  padding: px;
+  justify-content: space-between;
+}
+
+.block {
+  border: 2px solid white;
+  width: 11vh;
+  height: 11vh;
+}
+
+.button{
+text-align: center;
+}
+
+.teach {
+  background-color: #44a8d6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.inspiration {
+  display: flex;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.good, .med, .bad {
+  padding-left: 6vh;
+  padding-right: 6vh;
+}
+
+.quote {
+  margin: auto;
+  border: 3px solid transparent;
+  flex: 3;
+  background-color: #fff4dd;
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+.bean {
+  width: 100%;
+  flex: 1;
+  padding: 5%;
+}
+
+.bean-img {
+  width: 100%;
+}
+
+.day-btn {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;  
+  border: none;
+  outline: none;
+}
+
+.week-list {
+    list-style: none;
+}
+
+li {
+  padding: 1vh;
+}
+
+.bean-blocks {
+  background-color: #44a8d6;
+  border: none;
+  color: white;
+  padding: 1vh 1vh;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+}

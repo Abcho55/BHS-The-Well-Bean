@@ -1,0 +1,25 @@
+
+
+
+export const q1 = "\"The elevator to success is out of order. You’ll have to use the stairs, one step at a time.\" - Joe Girard";
+export const q2 = "\"People often say that motivation doesn’t last. Well, neither does bathing – that’s why we recommend it daily.\" - Zig Ziglar";
+export const q3 = "\"I always wanted to be somebody, but now I realise I should have been more specific.\" - Lily Tomlin";
+export const q4 = "\"I am so clever that sometimes I don’t understand a single word of what I am saying.\” - Oscar Wilde";
+export const q5 = "\"There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.\" ― Albert Einstein";
+export const q6 = "\"It does not matter how slowly you go as long as you do not stop.\" ― Confucius";
+export const q7 = "\"Success is not final failure is not fatal: it is the courage to continue that counts.\" ― Winston S. Churchill";
+export const q8 =  "\"Life is really simple, but we insist on making it complicated.\" ― Confucius";
+export const q9 = "\"When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us.\" ― Helen Keller";
+export const q10 = "\"Age is something that doesn't matter, unless you are a cheese.\" - Luis Bunuel";
+export const q11 = "\"Never doubt that a small group of thoughtful, committed, citizens can change the world. Indeed, it is the only thing that ever has.\" ― Margaret Mead";
+export const q12 = "\"What lies behind us and what lies before us are tiny matters compared to what lies within us.\" ― Ralph Waldo Emerson";
+export const q13 = "\"My advice to you is get married: If you find a good wife you’ll be happy; if not, you’ll become a philosopher.\" — Socrates";
+export const q14 = "\"Life is not a problem to be solved, but a reality to be experienced.\" – Soren Kierkegaard";
+// export const q15 = "\"Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.\" ― Roy T. Bennett, The Light in the Heart";
+// export const q16 = "\"Our lives begin to end the day we become silent about things that matter.\" ― Martin Luther King Jr";
+// export const q17 = "\"Maybe if we tell people the brain is an app, they’ll start using it.\" - Unknown";
+// export const q18 = "\"Fantasy is hardly an escape from reality. It's a way of understanding it.\" ― Lloyd Alexander";
+// export const q18 = "\"Good judgment comes from experience, and experience comes from bad judgment.\" - Rita Mae Brown";
+// export const q19 = "\"Instead of worrying about what you cannot control, shift your energy to what you can create.\" ― Roy T. Bennett";
+
+export const array = [q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14];

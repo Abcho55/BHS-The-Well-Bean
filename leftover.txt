@@ -1,0 +1,93 @@
+    <div class="week-blocks">
+      <div class="day1 block"></div>
+      <div class="day2 block"></div>
+      <div class="day3 block"></div>
+      <div class="day4 block"></div>
+      <div class="day5 block"></div>
+      <div class="day6 block"></div>
+      <div class="day7 block"></div>
+    </div>
+
+
+    <div class="daniel">
+      <input class="day-btn" type="button" onclick="colorChange(event)" data-count="0">
+    </div>
+
+
+  e.preventDefault();
+  //creates div that contains blocks
+  const weekDiv = document.createElement('div');
+  weekDiv.classList.add("week"+weekN);
+  weekDiv.classList.add("week-blocks");
+  weekDiv.setAttribute("data-week", weekN);
+  console.log(weekDiv);
+  //creates 7 divs that go inside of weekDiv
+  for (let day = 1; day < 8; day++) {
+    const dayDiv = document.createElement('div');
+    dayDiv.classList.add("day"+day);
+    dayDiv.classList.add("block");
+    //append the dayDiv to weekDiv
+    weekDiv.appendChild(dayDiv);
+    //create button
+    const dayBtn = document.createElement('button');
+    dayBtn.classList.add("day-btn");
+    //set counter for color change
+    dayBtn.setAttribute("data-count", "0");
+    //set onClick event 
+    dayBtn.setAttribute("onClick", "colorChange(event)");
+    //append button to dayDiv
+    dayDiv.appendChild(dayBtn);
+  }
+  const weekLi = document.createElement('li');
+  weekLi.appendChild(weekDiv);
+  weekLog.appendChild(weekLi);
+  weekN++;
+
+
+
+  wks.forEach(function(wk) {
+    switch (e.target.value) {
+    case "all":
+      wk.style.display = "flex";
+      break;
+    case "week":
+      console.log(wk);
+      console.log(wk.id);
+      if (wk.getAttribute("id") == "current-week") {
+        console.log("inside");
+        wk.style.display = "flex";
+      }else {
+        wk.style.display = "none";
+      }
+      break;
+    }
+  })
+
+
+
+
+
+
+    console.log(wks)
+  if (e.target.value === "all") {
+    wks.forEach(function (wk) {
+      wk.style.display = "flex";
+    })
+  }
+  else if (e.target.value === "week") {
+    var lastWk = document.querySelector('.current-wk');
+    wks.forEach(function (wk) {
+      wk.style.display = "none";
+    })
+    console.log(lastWk);
+    lastWk.style.display = "flex";
+  }
+
+
+function randQuote() {
+  var theQuote = quotes[Math.random(quotes.length)];
+  quote.innerText = theQuote;
+  
+}
+
+let quotes = ["\"The elevator to success is out of order. You’ll have to use the stairs, one step at a time.\" - Joe Girard", "\"People often say that motivation doesn’t last. Well, neither does bathing – that’s why we recommend it daily.\" - Zig Ziglar", "\" I always wanted to be somebody, but now I realise I should have been more specific.\" - Lily Tomlin", "\" I am so clever that sometimes I don’t understand a single word of what I am saying.\” - Oscar Wilde", "\" There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.\" ― Albert Einstein", "\" It does not matter how slowly you go as long as you do not stop.\" ― Confucius", "\" Success is not final failure is not fatal: it is the courage to continue that counts.\" ― Winston S. Churchill", "\" Life is really simple, but we insist on making it complicated.\" ― Confucius", "\" Age is something that doesn't matter, unless you are a cheese.\" - Luis Bunuel", "\" When one door of happiness closes, another opens; but often we look so long at the closed door that we do not see the one which has been opened for us. \" ― Helen Keller"]
